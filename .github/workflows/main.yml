@@ -24,4 +24,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Deploy to S3
-        run: aws s3 sync ./ s3://my-bucket-987987987  --delete
+        run: aws s3 sync ./ s3://s3-bucket-devops-01  --delete
